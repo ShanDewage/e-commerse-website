@@ -77,7 +77,7 @@
     <div class="column-66"  style="margin-top:90px;">
       <h1 class="xlarge-font"><b>NEW ARRIVALS  </b></h1>
       <h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
-      <p style="padding-left:20px;text-align: justify;"><span style="font-size:30px; ">Fall styles from the size-inclusive brand are here.</span> See what's new at BUTTON now,buy  clothes in kid's,Men's and Women's fashion-forward decor to top-selling, award-winning brands like ARMANI, FENDI,BURBERRY,LOUIS VUITTON and more.</p>
+      <p style="padding-left:20px;text-align: justify;"><span style="font-size:30px; ">Fall styles from </span>the size-inclusive brand are here.See what's new at BUTTON now,buy  clothes in kid's,Men's and Women's fashion-forward decor to top-selling, award-winning brands like ARMANI, FENDI,BURBERRY,LOUIS VUITTON and more.</p>
      <router-link to="/product"  style="width:150px;height:50px;padding-top:12px;" class="btn btn-success " >SHOP NOW</router-link>
     </div>
     <div class="column-33">
