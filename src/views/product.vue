@@ -1,9 +1,9 @@
 <template>
-  <div class="product">
+  <div class="product" id="bgc">
    
      
    <Navbar/>
-    <h1>This is an pro page</h1>
+  
       <products-list></products-list>
       <login/>
      <Footer/>
@@ -25,3 +25,11 @@ export default {
   }
 };
 </script>
+
+<style>
+    #bgc{
+        
+
+background: radial-gradient( #E6E6FA, #F0F2F0,#000C40); 
+    }
+</style>

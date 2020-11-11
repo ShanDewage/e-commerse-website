@@ -16,10 +16,10 @@
   <div  class="collapse navbar-collapse   " id="navbarSupportedContent">
     <ul id="navbar" class="nav  nav-justified" >
       <li class="nav-item ">
-        <router-link to="/Home"  style="width:123px" class="nav-link active" >Home <span class="sr-only">(current)</span></router-link>
+        <router-link to="/Home"  style="width:123px" class="nav-link active" ><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></router-link>
       </li>
       <li class="nav-item"  >
-        <router-link to="/product"  style="width:123px" class="nav-link active " >Product</router-link>
+        <router-link to="/product"  style="width:123px" class="nav-link active " >Store</router-link>
       </li>
        <li class="nav-item"  >
         <router-link to="/contact"  style="width:123px" class="nav-link active " >Contact Us</router-link>
@@ -30,23 +30,49 @@
     
      
     </ul>
-    <form class="form-inline my-2 my-lg-0 " style="padding-left:250px;">
+    
+    
+    <form class="form-inline my-2 my-lg-0  " style="padding-left:160px;">
        <a class="btn btn-outline-primary  my-2 my-sm-0"  data-toggle="modal" data-target="#login" style="margin-right:15px;" >Log In</a>
         <mini-cart></mini-cart>
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" style="color:white" type="submit">Search</button>
+       <a class="btn btn-outline-info border-1 mx-2 my-2 my-sm-0 " data-toggle="modal" data-target="#miniCart">Cart
+         <i class="fas fa-cart-plus"></i>
+       </a>
+              
     </form>
          
   </div>
+
   </div>
   
 </nav>
+<div class="mt-1 mb-1" >
+  
+  <nav  id="nav2" class="navbar navbar-expand-lg py-0  " style="height:25px;"  >
+    
+   <ul  class="navbar-nav ml-auto " id="nav2color" >
+      <li class="nav-item ">
+        <router-link to="/Home"  style="width:123px" class="nav-link active py-0" >My Account </router-link>
+      </li>
+      <li class="nav-item"  >
+         <a type="button" class=" nav-link active py-0 " data-toggle="modal"  style="width:123px" data-target="#miniCart">View Bag <i class="fas fa-cart-plus"></i>
+       </a>
+       
+      </li>
+       <li class="nav-item"  >
+        <router-link to="/checkout"  style="width:123px" class="nav-link active py-0" >Checkout </router-link>
+      </li>
+      
+    
+     
+    </ul>
+  </nav>
+ </div>
       </div>
 
    
-  <kinesis-container>
-           
-              <kinesis-element :strength="5" >
               
     <div id="sli" style="padding-top:70px;margin-top:0px;height:450px;outline: 5px solid black;"  >
       
@@ -75,9 +101,7 @@
      
     </carousel-3d>
     </div>
-     </kinesis-element>
-          </kinesis-container>
-    
+   
 
      </div>
   </div>
@@ -124,6 +148,24 @@ border-radius: 10px;
    
 }
 
+#nav2color a 
+{
+
+  display: block;
+  color: white;
+  text-align: center;
+ 
+ 
+ 
+}
+
+#nav2color a:hover {
+   color:white; 
+    border-bottom: 1px solid #c3c3e5;
+
+ 
+}
+
 #sli {
   background: #0f0c29;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
@@ -150,6 +192,11 @@ background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, F
  
 }
 
+#nav2{
+  background: 		black	;
+  font-family: cursive;
+ 
+}
 
 
 

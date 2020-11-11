@@ -1,15 +1,15 @@
 <template>
 
-<footer id="foot" class="page-footer font-small stylish-color-dark " style="margin-top:15px;margin-bottom:5px;outline: 9px solid black; ">
+<footer id="foot" class="page-footer font-small stylish-color-dark  " style="margin-bottom:5px;outline: 9px solid black; ">
 
-    <div class="container text-center text-md-left">
+    <div class="container text-center text-md-left ">
 
-     <div class="row" style="height:220px;">
+     <div class="row " style="height:120px;">
        
 
        <div class="col-md-4 mx-auto" style="text-align: justify;">
 
-      <router-link to="/about" style="color:white; text-decoration: none;"  >  <h3 class="font-weight-bold text-uppercase mt-1 mb-3" style="color:Silver;" >About Us</h3></router-link>
+      <router-link to="/about" style="color:white; text-decoration: none;"  >  <h3 class="font-weight-bold text-uppercase mt-0 mb-3" style="color:Silver;" >About Us</h3></router-link>
         <p style="color:white; " class="text-muted">BUTTON IS AN ONLINE FAST FASHION RETAILER. WE DESIGN, PRODUCE, AND SELL OUR PRODUCTS GLOBALLY AND
           EXCLUSIVELY ON BUTTON.COM</p>
  <router-link to="/Home" ><h1 style="margin-top:10px; font-family: Garamond;color:white;font-size:45px;outline: 1px solid black;" class="btn text-muted " >BUTTON</h1></router-link>
@@ -19,7 +19,7 @@
      
       <div class="col-md-3 mx-auto"  style="color:Silver;">
 
-      <h5 class="font-weight-bold text-uppercase mt-1 mb-3 col-md-11 mx-auto " >Contact Us</h5>
+      <h5 class="font-weight-bold text-uppercase mt-0 mb-3 col-md-11 mx-auto " >Contact Us</h5>
 
         <ul class="list-group text-muted  col-md-10 mx-auto"  >
           <li class="row" >
@@ -45,7 +45,7 @@
       
     
       <div class="col-md-2 mx-auto"  style="color:Silver;">
-        <h5 class="font-weight-bold text-uppercase mt-1 mb-3  col-md-12 mx-auto">Address</h5>
+        <h5 class="font-weight-bold text-uppercase mt-0 mb-3  col-md-12 mx-auto">Address</h5>
 
         <ul class="list-group text-muted col-md-6 mx-auto"  >
           <li class="row">
@@ -64,7 +64,7 @@
      
 
       <div class="col-md-2 mx-auto" style="color:Silver;">
-        <h5 class="font-weight-bold text-uppercase mt-1 mb-3">follow us</h5>
+        <h5 class="font-weight-bold text-uppercase mt-0 mb-3">follow us</h5>
 
         <ul class="list-unstyled" style="margin-left:40px;">
           <li>

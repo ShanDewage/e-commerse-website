@@ -1,7 +1,7 @@
 <template>
   <div class="add-to-cart">
    
-        <button class="btn btn-primary float-left" @click="addToCart"> Add to Cart </button>
+        <button class="btn btn-danger float-left btn-sm btn-lg btn-block" @click="addToCart"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Add to Bag </button>
     
   </div>
 </template>

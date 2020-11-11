@@ -4,8 +4,8 @@
      
    </Navbar>
    <div style="font-family:Comic Sans MS, cursive, sans-serif;text-align: justify;">
-    <div class="abou"  style="background-image: linear-gradient(to top, #03001f 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);margin-top:10px;"   >
-      <div style="color:white; padding:50px; border: 5px solid white ; border-radius: 50px 50px; text-shadow:  2px;background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);">
+    <div class="abou"   >
+      <div id="aboubody" style="color:white; padding:50px; border: 5px solid white ; border-radius: 50px 50px; text-shadow:  2px;">
     <h1>About Us </h1>
   
   <h4 >BUTTON IS AN ONLINE FAST FASHION<br> RETAILER. WE DESIGN, PRODUCE,
@@ -94,7 +94,7 @@
  
   padding: 50px;
   text-align: center;
-  background-color:	dimgray ;
+ 
   color: black;
   font-family:"Lucida Console", Monaco, monospace;
   
@@ -106,6 +106,13 @@
   
   box-sizing: border-box;
  
+}
+
+#aboubody{
+background: #2b5876;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 

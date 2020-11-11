@@ -8,14 +8,14 @@
    
  
  
-  <div class="home container" style="margin-top:15px;outline: 2px solid white;   font-family:Comic Sans MS, cursive, sans-serif;  background-image: linear-gradient(120deg,  #D0D3D4  0%, #8287F5 80%);">
+  <div class="home container" style="margin-top:15px;margin-bottom:20px;outline: 2px solid white;   font-family:Comic Sans MS, cursive, sans-serif;  background-image: linear-gradient(120deg,  #D0D3D4  0%, #8287F5 80%);">
      
    <div style="text-align:center; ">
 
   <kinesis-container>
            
               <kinesis-element :strength="10"  class="txt">
-               WELCOME TO BUTTON!
+               WELCOME TO BUTTON!!
               </kinesis-element>
               <kinesis-element :strength="10" class="txt2">
                YOU ARE CURRENTLY ON OUR ONLINE SHOPPING SITE.
@@ -78,7 +78,10 @@
       <h1 class="xlarge-font"><b>NEW ARRIVALS  </b></h1>
       <h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
       <p style="padding-left:20px;text-align: justify;"><span style="font-size:30px; ">Fall styles from </span>the size-inclusive brand are here.See what's new at BUTTON now,buy  clothes in kid's,Men's and Women's fashion-forward decor to top-selling, award-winning brands like ARMANI, FENDI,BURBERRY,LOUIS VUITTON and more.</p>
-     <router-link to="/product"  style="width:150px;height:50px;padding-top:12px;" class="btn btn-success " >SHOP NOW</router-link>
+   <div style="margin-top:30px">
+    
+      <a href="product" style="background-color:red; color: white;" class="button  " >SHOP NOW</a>
+     </div>
     </div>
     <div class="column-33">
         <img  width="335" height="471"  src="../assets/l1.jpg" />
@@ -96,8 +99,11 @@
       <h1  style="font-size:55px"><b>LEARN MORE ABOUT US</b></h1>
       
       <h1 class="large-font" style="color:red;"><b>BUTTON, WHO?</b></h1>
-      <p><span style="font-size:24px">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <button class="button" style="background-color:red">Read More</button>
+      <p><span style="font-size:24px">Button is an online </span>   fast fashion retailer.we design, produce,and sell our products globally and exclusively on BUTTON.COM</p>
+        <div style="margin-top:30px">
+        
+          <a href="About" style="background-color:red; color: white;" class="button  " >Read More</a>
+    </div>
     </div>
   </div>
 </div>
@@ -109,7 +115,10 @@
       <h1 class="xlarge-font"><b>The App</b></h1>
       <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why buy it?</b></h1>
       <p><span style="font-size:36px">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <button class="button">Download Application</button>
+          <div style="margin-top:30px">
+         
+    <a href="contact" style="background-color:slateblue; color: white;" class="button  " >Contact Us</a>
+    </div>
     </div>
     <div class="column-33">
        
