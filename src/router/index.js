@@ -8,6 +8,7 @@ import Products from "../views/Products.vue";
 import product from "../views/product.vue";
 import Profile from "../views/Profile.vue";
 import Orders from "../views/Orders.vue";
+import myaccount from "../views/myaccount.vue";
 
 import {fb} from '../firebase';
 
@@ -35,6 +36,13 @@ const routes = [
   component: () =>
     import(/* webpackChunkName: "about" */ "../views/product.vue")
   },
+  {
+    path: "/myaccount",
+    name: "myaccount",
+   
+    component: () =>
+      import("../views/myaccount.vue")
+    },
   {
     path: "/checkout",
     name: "checkout",

@@ -31,7 +31,7 @@
                   </ul>
               </div>
               <div class="modal-footer " >
-                <button type="button" class="btn btn-success  " data-dismiss="modal">Continue Shopping</button>
+                <button type="button" class="btn btn-success  " data-dismiss="modal"  @click="product">Continue Shopping</button>
                 <button type="button" class="btn btn-primary " @click="checkout">Checkout</button>
               </div>
             </div>
@@ -53,6 +53,10 @@ export default {
     checkout(){
       $('#miniCart').modal('hide')
       this.$router.push('/checkout')  
+    },
+        product(){
+      $('#miniCart').modal('hide')
+      this.$router.push('/product')  
     }
 
   }

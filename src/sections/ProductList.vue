@@ -83,7 +83,8 @@ data(){
         font-family: Andale Mono, monospace;
 
 
-background: radial-gradient( #302b63, #F0F2F0,#302b63); 
+
+background: radial-gradient( #b2b2d8, #F0F2F0,#b2b2d8); 
 
        color: black;
     }

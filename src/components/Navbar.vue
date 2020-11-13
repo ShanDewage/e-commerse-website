@@ -32,14 +32,12 @@
     </ul>
     
     
-    <form class="form-inline my-2 my-lg-0  " style="padding-left:160px;">
+    <form class="form-inline my-2 my-lg-0  " style="padding-left:110px;">
        <a class="btn btn-outline-primary  my-2 my-sm-0"  data-toggle="modal" data-target="#login" style="margin-right:15px;" >Log In</a>
         <mini-cart></mini-cart>
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" style="color:white" type="submit">Search</button>
-       <a class="btn btn-outline-info border-1 mx-2 my-2 my-sm-0 " data-toggle="modal" data-target="#miniCart">Cart
-         <i class="fas fa-cart-plus"></i>
-       </a>
+        <router-link to="/checkout" type="button"  style="width:123px" class="btn btn-danger my-2 my-sm-0 ml-3"  >CHECKOUT </router-link>
               
     </form>
          
@@ -54,15 +52,12 @@
     
    <ul  class="navbar-nav ml-auto " id="nav2color" >
       <li class="nav-item ">
-        <router-link to="/Home"  style="width:123px" class="nav-link active py-0" >My Account </router-link>
+        <router-link to="/myaccount"  style="width:123px" class="nav-link active py-0" >My Account </router-link>
       </li>
       <li class="nav-item"  >
          <a type="button" class=" nav-link active py-0 " data-toggle="modal"  style="width:123px" data-target="#miniCart">View Bag <i class="fas fa-cart-plus"></i>
        </a>
        
-      </li>
-       <li class="nav-item"  >
-        <router-link to="/checkout"  style="width:123px" class="nav-link active py-0" >Checkout </router-link>
       </li>
       
     
@@ -198,6 +193,18 @@ background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, F
  
 }
 
+.btn-danger {
+    color: #fff;
+    background-color: #FF0000;
+    border-color: white; 
+   
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger {
+    color: #ffffff;
+    background-color: #ff4c4c;
+    border-color: #FF0000; 
+ 
+}
 
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="product" id="bgc">
+  <div class="product" >
    
      
    <Navbar/>
@@ -26,10 +26,3 @@ export default {
 };
 </script>
 
-<style>
-    #bgc{
-        
-
-background: radial-gradient( #E6E6FA, #F0F2F0,#000C40); 
-    }
-</style>

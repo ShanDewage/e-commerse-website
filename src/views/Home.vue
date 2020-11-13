@@ -1,6 +1,6 @@
 <template>
 
-  <div style=" background-image: linear-gradient(2deg,  #4A235A  0%, #E8DAEF 100%);" >
+  <div style="background: radial-gradient( #e5e5f2, #F0F2F0,#b2b2d8); "  >
     <Navbar>
      
    </Navbar>
@@ -8,7 +8,9 @@
    
  
  
-  <div class="home container" style="margin-top:15px;margin-bottom:20px;outline: 2px solid white;   font-family:Comic Sans MS, cursive, sans-serif;  background-image: linear-gradient(120deg,  #D0D3D4  0%, #8287F5 80%);">
+  <div class="home container" style="margin-top:15px;margin-bottom:20px;outline: 2px solid white; 
+    font-family:Comic Sans MS, cursive, sans-serif; 
+   background: radial-gradient( #e5e5f2, #F0F2F0,#8287F5);">
      
    <div style="text-align:center; ">
 
