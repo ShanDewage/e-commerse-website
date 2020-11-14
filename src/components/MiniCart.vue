@@ -31,8 +31,10 @@
                   </ul>
               </div>
               <div class="modal-footer " >
-                <button type="button" class="btn btn-success  " data-dismiss="modal"  @click="product">Continue Shopping</button>
-                <button type="button" class="btn btn-primary " @click="checkout">Checkout</button>
+               <div class="pr-2">
+                <button type="button" class="btn btn-success  " style="width:220px;" data-dismiss="modal"  @click="product">Continue Shopping</button>
+                <button type="button" class="btn btn-primary ml-2 " @click="checkout"  style="width:220px;">Checkout</button>
+               </div>
               </div>
             </div>
           </div>

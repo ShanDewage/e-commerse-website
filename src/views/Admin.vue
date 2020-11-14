@@ -1,11 +1,11 @@
 <template>
-  <div class="admin">
-<div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+  <div class="admin" >
+<div class="page-wrapper default-theme sidebar-bg bg1 toggled"  >
         <a id="show-sidebar" @click="closeMenu" class="btn btn-sm btn-dark" href="#">
             <i class="fas fa-bars"></i>
         </a>
         <nav id="sidebar" class="sidebar-wrapper">
-            <div class="sidebar-content">
+            <div class="sidebar-content" >
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
                     <a href="#">BUTTON SHOP</a>
@@ -16,10 +16,10 @@
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header">
                     <div class="user-pic">
-                        <img class="img-responsive img-rounded" src="/user.png" alt="User picture">
+                        <img class="img-responsive img-rounded" src="/svg/pro_pic_admin.svg" alt="User picture">
                     </div>
-                    <div class="user-info">
-                        <span class="user-name">
+                    <div class="user-info text-left">
+                        <span class="user-name" >
                             <strong>Admin</strong>
                         </span>
                         <span class="user-role"> {{email}} </span>
@@ -44,7 +44,7 @@
                 </div>
                 <!-- sidebar-menu  -->
                 <div class=" sidebar-item sidebar-menu">
-                    <ul>
+                    <ul class="text-left ml-2" style=" font-size: 15px;">
                         <li class="header-menu">
                             <span>Menu</span>
                         </li>
@@ -52,7 +52,7 @@
                         <li>
                             <router-link to="/admin/overview">
                                 <i class="fa fa-chart-line"></i>
-                                <span>Overview</span>
+                               <span>Overview</span>
                             </router-link>
                         </li>
                         <li>
@@ -140,6 +140,9 @@ export default {
 </script>
 
 <style>
-
+#admin{
+    color: white;
+   
+}
 </style>
 

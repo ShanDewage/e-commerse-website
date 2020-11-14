@@ -3,53 +3,54 @@
       <div class="container">
           
         <div class="intro h-100">
-            <div class="row h-100 justify-content-center align-items-center">
-              <div class="col-md-6">
-                    <h3>Products Page</h3>
-                    
-                 <p>
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ducimus.
-                 </p>
+            <div class="row h-100 text-left">
+              <div class="col-md-6 ">
+                    <h3 >Products Page</h3>
+                
+                 <label>
+                 Shop Items with Name and Price
+                 </label>
               </div>
-              <div class="col-md-6">
-                  <img src="/svg/products.svg" alt="" class="img-fluid">
+                  <div class="col-md-2 float-right ">
+                  <img src="" class="pr-2" alt="" >
               </div>
+              
             </div>
           </div>
 
           <hr>
 
-          <div class="product-test">
+          <div class="product-test ">
 
 
             <h3 class="d-inline-block float-left">Products list</h3>
             <button @click="addNew" class="btn btn-primary float-right">Add Product</button>
 
-            <div class="table-responsive">
+            <div class="table-responsive ">
               
                 <table class="table">
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Price</th>
-                      <th>Modify</th>
+                      <th class="text-left">Name</th>
+                      <th >Price</th>
+                      <th >Modify</th>
                     </tr>
                   </thead>
 
                   <tbody>
                       <tr v-for="product in products"  v-bind:key="product.id">
-                        <td>
+                        <td class="text-left">
                           {{product.name}}
                         </td>
 
-                        <td>
+                        <td >
                           {{product.price}}
                         </td>
 
-                        <td>
+                        <td >
 
-                          <button class="btn btn-primary" @click="editProduct(product)">Edit</button>
-                          <button class="btn btn-danger" @click="deleteProduct(product)">Delete</button>
+                          <button class="btn btn-primary float-right" style="width:100px;" @click="editProduct(product)">Edit</button>
+                          <button class="btn btn-danger mr-2 float-right" style="width:100px;" @click="deleteProduct(product)">Delete</button>
                         </td>
 
                       </tr>
@@ -66,15 +67,15 @@
       <div class="modal fade" id="product" tabindex="-1" role="dialog" aria-labelledby="editLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="editLabel">Edit Product</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-header" style="background:black;color:white;">
+              <h5 class="modal-title" id="editLabel"> Product Add / Edit</h5>
+              <button type="button" class="close" style="color:white;font-size:30px;" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
 
-                <div class="row">
+                <div class="row text-left">
                   <!-- main product -->
                   <div class="col-md-8">
                     <div class="form-group">
@@ -87,15 +88,15 @@
                   </div>
                   <!-- product sidebar -->
                   <div class="col-md-4">
-                    <h4 class="display-6">Product Details</h4>
+                    <h3 class="display-6">Product Details</h3>
                     <hr>
 
                     <div class="form-group">
-                      <input type="text" placeholder="Product price" v-model="product.price" class="form-control">
+                      <input type="text" placeholder="Product Price" v-model="product.price" class="form-control">
                     </div>
 
                     <div class="form-group">
-                      <input type="text" @keyup.188="addTag" placeholder="Product tags" v-model="tag" class="form-control">
+                      <input type="text" @keyup.188="addTag" placeholder="Product Tags" v-model="tag" class="form-control">
                       
                       <div  class="d-flex">
                         <p v-for="tag in product.tags"  v-bind:key="tag">
@@ -128,9 +129,9 @@
 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button @click="addProduct()" type="button" class="btn btn-primary" v-if="modal == 'new'">Save changes</button>
-              <button @click="updateProduct()" type="button" class="btn btn-primary" v-if="modal == 'edit'">Apply changes</button>
+              <button type="button" class="btn btn-secondary " style="width:250px;" data-dismiss="modal">Close</button>
+              <button @click="addProduct()" type="button" class="btn btn-primary " style="width:250px;" v-if="modal == 'new'">Save changes</button>
+              <button @click="updateProduct()" type="button" class="btn btn-primary "  style="width:250px;"  v-if="modal == 'edit'">Apply Changes</button>
             </div>
           </div>
         </div>
@@ -326,6 +327,10 @@ export default {
 }
 .img-wrapp span.delete-img:hover{
   cursor: pointer;
+}
+.container
+{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 </style>
