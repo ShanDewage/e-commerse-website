@@ -3,15 +3,15 @@
       <div class="container">
           
         <div class="intro h-100">
-            <div class="row h-100 justify-content-center align-items-center">
-              <div class="col-md-6">
+            <div class="row h-100 justify-content-left align-items-left">
+              <div class="col-md-6 text-left">
                     <h3>Orders Page</h3>
                     
                  <p>
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ducimus.
+                  
                  </p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                   <img src="/svg/orders.svg" alt="" class="img-fluid">
               </div>
             </div>
@@ -22,7 +22,7 @@
           <div class="product-test">
 
 
-            <h3 class="d-inline-block">Orders list</h3>
+            <h3 class="d-inline-block float-left">Orders list</h3>
             <button @click="addNew" class="btn btn-primary float-right">Add Orders</button>
 
             <div class="table-responsive">
@@ -30,7 +30,7 @@
                 <table class="table">
                   <thead>
                     <tr>
-                      <th>Name</th>
+                      <th class="text-left">Name</th>
                       <th>Price</th>
                       <th>Modify</th>
                     </tr>
@@ -38,7 +38,7 @@
 
                   <tbody>
                       <tr v-for="product in products" v-bind:key="product.id">
-                        <td>
+                        <td class="text-left">
                           {{product.name}}
                         </td>
 

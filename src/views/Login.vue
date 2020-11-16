@@ -1,19 +1,19 @@
 <template>
   <div class="login "  >
-        <!-- Modal -->
-        <div   class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div style="border-radius:  10px ;" class="modal-content">
-
+        <Navbar>
+     
+   </Navbar>
+    <div class=" body ">
+       
                 <div class="modal-body" id="bg" style="border-radius: 10px ;color: white; ">
 
 
                         <ul class="nav nav-fill nav-pills mb-3" style=" font-size: 16px;" id="pills-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active  btn-outline-primary" id="pills-home-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">SIGN IN</a>
+                                <a class="nav-link active  btn-outline-success" id="pills-home-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">SIGN IN</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  btn-outline-primary" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">SIGN UP</a>
+                                <a class="nav-link  btn-outline-success" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">SIGN UP</a>
                             </li>
 
                           
@@ -29,48 +29,52 @@
                              <div class="user-pic">
                         <img class="img-responsive img-rounded" src="/user.png" alt="User picture">
                            </div>
-                            <div class="form-group text-left font-weight-bold "  style="margin-top:15px">
+                            <div class="textbox text-left font-weight-bold "  style="margin-top:15px">
                                     
-                                <label for="exampleInputEmail1" style=" font-size: 16px;">Email : </label>
+                                <label for="exampleInputEmail1"  class="float-left">Email : </label>
                               
                                    
-                                <input type="email" v-model="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Email">
-                                <small class="form-text " style="color:silver;">*We'll never share your email with anyone else.</small>
+                                <input type="email"  v-model="email"  id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Email">
+                              
                              
                             </div>
-                            <div class="form-group text-left font-weight-bold ">
-                                <label for="exampleInputPassword1" style=" font-size: 16px;">Password :</label>
-                                <input type="password" @keyup.enter="login" v-model="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                              <small class="form-text text-left" style="color:silver;">*We'll never share your email with anyone else.</small>
+                            
+                            <div class="textbox text-left font-weight-bold ">
+                                <label for="exampleInputPassword1" class="float-left">Password :</label>
+                                <input type="password" @keyup.enter="login" v-model="password"  id="exampleInputPassword1" placeholder="Password">
                             </div>
 
                              <div class="form-group">
-                                <button class="btn  btn-outline-primary btn-block" @click="login">SIGN IN</button>
+                                <button class="btn  btn-outline-success btn-block" @click="login">SIGN IN</button>
                             </div>
 
                         </div>
                         <div class="tab-pane fade"  id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
                             
                              <h6 class="text-center">New to Button? Create an account to make shopping and checkout easier. #ShopButton now</h6>
-                             
-                            <div class="form-group text-left font-weight-bold  " style="margin-top:15px">
-                                <label for="name " style=" font-size: 16px;" >Your Name :</label>
-                                <input type="text" v-model="name" class="form-control" id="name" placeholder="Your Name">
+                             <div class="col-md-12 ">
+                           <img src="/svg/shopping.svg" width="200" alt="" class="float-center pt-3 ">
+                        </div>
+                            <div class="form-group textbox text-left font-weight-bold  " style="margin-top:15px">
+                                <label for="name " class="float-left" >Your Name :</label>
+                                <input type="text" v-model="name"  id="name" placeholder="Enter Your Name Here">
                             </div>
 
                               
                            
 
-                            <div class="form-group text-left font-weight-bold">
-                                <label for="email" style=" font-size: 16px;">Email :</label>
-                                <input type="email"  v-model="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                            <div class="form-group textbox text-left font-weight-bold">
+                                <label for="email" class="float-left">Email :</label>
+                                <input type="email"  v-model="email"  id="email" aria-describedby="emailHelp" placeholder="Enter Email Address">
                             </div>
-                            <div class="form-group text-left font-weight-bold">
-                                <label for="password" style=" font-size: 16px;">Password :</label>
-                                <input type="password" v-model="password" class="form-control" id="password" placeholder="Password">
+                            <div class="form-group  textbox text-left font-weight-bold">
+                                <label for="password" class="float-left">Password :</label>
+                                <input type="password" v-model="password"  id="password" placeholder="Enter Password">
                             </div>
 
                             <div class="form-group">
-                                <button  class="btn  btn-outline-primary btn-block" @click="register">SIGN UP</button>
+                                <button  class="btn  btn-outline-success btn-block" @click="register">SIGN UP</button>
                             </div>
 
                         </div>
@@ -82,12 +86,12 @@
                         </g></svg>
  
                 </div>
-           
+                </div>
+            <Footer>
+     
+   </Footer>
             </div>
-        </div>
-        </div>
-    
-  </div>
+  
 </template>
 
 <script>
@@ -113,7 +117,7 @@ import {fb,db} from '../firebase';
           fb.auth().signInWithEmailAndPassword(this.email, this.password)
                         .then(() => {
                         $('#login').modal('hide')
-                          this.$router.replace('admin');  
+                          this.$router.replace('home');  
                         })
                         .catch(function(error) {
                             // Handle Errors here.
@@ -143,7 +147,7 @@ import {fb,db} from '../firebase';
                         console.error("Error writing document: ", error);
                     });
 
-                    this.$router.replace('admin');
+                    this.$router.replace('home');
                 })
                 .catch(function(error) {
                 // Handle Errors here.
@@ -173,12 +177,75 @@ img {
 };
 
 #bg{
-background: #E6DADA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
  font-family:Comic Sans MS, cursive, sans-serif;
 }
+.login
+{
+ 
+    background: radial-gradient( #e5e5f2, #F0F2F0,#b2b2d8); 
+   
+}
 
+.body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../assets/zz.jpeg) no-repeat;
+    background-size:cover;
+    
+
+}
+.modal-body{
+    width: 700px;
+    height: 800px;
+   background: none;
+   margin-left: 330px;
+   padding-top: 150px;
+    color: white;
+
+}
+
+
+.textbox
+{
+    width:100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50 ;
+      background: none;
+}
+
+.textbox i{
+    width:26px;
+    float: left;
+    text-align: center;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 50%;
+    float: left;
+    margin: 0 10px;
+}
+
+.btn
+{
+    width: 100%;
+    background: none;
+    border:  2px solid #4caf50 ;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor:pointer;
+    margin: 12px 0;
+}
 
 </style>

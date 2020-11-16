@@ -33,11 +33,11 @@
     
     
     <form class="form-inline my-2 my-lg-0  " style="padding-left:110px;">
-       <a class="btn btn-outline-primary  my-2 my-sm-0"  data-toggle="modal" data-target="#login" style="margin-right:15px;" >Log In</a>
+        <router-link to="/Login" class="btn btn-outline-primary  my-2 my-sm-0"  data-toggle="modal" data-target="#login" style="margin-right:15px;" >Log In</router-link>
         <mini-cart></mini-cart>
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" style="color:white" type="submit">Search</button>
-        <router-link to="/checkout" type="button"  style="width:123px" class="btn btn-danger my-2 my-sm-0 ml-3"  >CHECKOUT </router-link>
+        <router-link to="/checkout"  type="button"  style="width:123px" class="btn btn-danger my-2 my-sm-0 ml-3"  >CHECKOUT </router-link>
               
     </form>
          
@@ -48,17 +48,26 @@
 </nav>
 <div class="mt-1 mb-1" >
   
-  <nav  id="nav2" class="navbar navbar-expand-lg py-0  " style="height:25px;"  >
+  <nav  id="nav2" class="navbar navbar-expand-lg py-0 pt-1 " style="height:25px;"  >
     
    <ul  class="navbar-nav ml-auto " id="nav2color" >
+     <li class="nav-item " style="color:white;">
+           <h6 class=""> {{email}} </h6>
+     </li>
       <li class="nav-item ">
-        <router-link to="/myaccount"  style="width:123px" class="nav-link active py-0" >My Account </router-link>
+        <router-link to="/Myaccount"   style="width:123px" class="nav-link active py-0" >My Account </router-link>
       </li>
       <li class="nav-item"  >
          <a type="button" class=" nav-link active py-0 " data-toggle="modal"  style="width:123px" data-target="#miniCart">View Bag <i class="fas fa-cart-plus"></i>
        </a>
        
       </li>
+       <li>
+           <a href="#" @click="logout()">
+            <i class="fa fa-power-off"></i>
+           <span>Logout</span>
+             </a>
+        </li>
       
     
      
@@ -107,13 +116,41 @@
 
 
 import {Carousel3d,Slide} from 'vue-carousel-3d';
+import {fb} from '../firebase';
 
 export default {
   name: "Navbar",
   props: {
     msg: String
   },
-  components:{Carousel3d,Slide}
+  components:{Carousel3d,Slide},
+
+   
+  data(){
+      return{
+          name:null,
+          email:null,
+      }
+  },
+
+  methods:{
+     
+      logout(){
+          fb.auth().signOut()
+          .then(() => {
+              this.$router.replace('/home');
+          })
+          .catch((err) =>{
+              console.log(err);
+          });
+      }
+  },
+
+  created(){
+      let user = fb.auth().currentUser;
+      this.email = user.email;
+
+  }
 
 };
 </script>

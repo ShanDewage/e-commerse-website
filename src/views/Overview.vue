@@ -1,9 +1,9 @@
 <template>
   <div class="overview">
-      <div class="container h-100">
-         <h3>Overview Page</h3>
+      <div class=" h-100">
+         <h3 class="text-left font-weight-bold">Overview Page</h3>
           <div class="intro h-100">
-            <div class="row h-100 justify-content-center align-items-center">
+            <div class="row h-100 justify-content-left align-items-center">
               <div class="col-md-6">
                 
                  <p>

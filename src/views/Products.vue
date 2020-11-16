@@ -1,13 +1,13 @@
 <template>
   <div class="products">
-      <div class="container">
+      <div class=" mt-" id="container">
           
         <div class="intro h-100">
-            <div class="row h-100 text-left">
+            <div class="row h- text-left">
               <div class="col-md-6 ">
                     <h3 >Products Page</h3>
                 
-                 <label>
+                 <label class="font-weight-bold">
                  Shop Items with Name and Price
                  </label>
               </div>
@@ -328,7 +328,7 @@ export default {
 .img-wrapp span.delete-img:hover{
   cursor: pointer;
 }
-.container
+#container
 {
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

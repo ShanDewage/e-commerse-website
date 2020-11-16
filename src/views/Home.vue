@@ -130,7 +130,7 @@
 </div>
 
    
-      <login></login>
+     
 
     
   </div>
@@ -145,13 +145,17 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import Hero from "@/components/Hero.vue";
 import Products from "@/sections/Products.vue";
-import Login from "@/components/Login.vue";
+
+
+import {fb} from '../firebase';
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,Hero,Products,Login
+    HelloWorld,Hero,Products
   },
+
+  
 
   
 };

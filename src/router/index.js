@@ -8,7 +8,8 @@ import Products from "../views/Products.vue";
 import product from "../views/product.vue";
 import Profile from "../views/Profile.vue";
 import Orders from "../views/Orders.vue";
-import myaccount from "../views/myaccount.vue";
+import Login from "../views/Login.vue";
+import Myaccount from "../views/Myaccount.vue";
 
 import {fb} from '../firebase';
 
@@ -39,14 +40,14 @@ const routes = [
   {
     path: "/myaccount",
     name: "myaccount",
-   
+    meta:{requiresAuth:true},
     component: () =>
-      import("../views/myaccount.vue")
+      import("../views/Myaccount.vue")
     },
   {
     path: "/checkout",
     name: "checkout",
-  
+    meta:{requiresAuth:true},
     component: () =>
       import( "../views/Checkout.vue")
   },
@@ -90,6 +91,14 @@ const routes = [
    
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/contact.vue")
+    },
+    
+  {
+    path: "/Login",
+    name: "Login",
+   
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Login.vue")
     }
 ];
 
@@ -106,7 +115,7 @@ router.beforeEach((to,from,next)=>{
   const currentUser =fb.auth().currentUser
 
   if(requiresAuth && !currentUser){
-    next('/home')
+    next('/Login')
   }else if (requiresAuth && currentUser){
     next()
   }else {
