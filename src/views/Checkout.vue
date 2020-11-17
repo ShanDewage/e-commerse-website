@@ -26,19 +26,30 @@
                         </li>
 
                     </ul>
-                   
+                </div>
                 
-                <form>
-             
-                    
-                    </form>
+      
+                <div class="col-md-4 mt-5 ">
+                    <h3 style="color:red;">
+                        Total Price : {{ this.$store.getters.totalPrice | currency }}
+                    </h3>
+
+                                      
+                   <router-link to="/Payment" class=' btn btn-primary mt-4 float-left ml-5'  >Pay With Credit Card</router-link>
+               
+               
                 </div>
             </div>
-        </div>
+                </div>
+          
+        
+        
           <Footer/>
         </div>
 
 </template>
+
+
 
 <style>
 .chekout

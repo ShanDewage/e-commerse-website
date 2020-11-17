@@ -10,6 +10,7 @@ import Profile from "../views/Profile.vue";
 import Orders from "../views/Orders.vue";
 import Login from "../views/Login.vue";
 import Myaccount from "../views/Myaccount.vue";
+import Payment from "../views/Payment.vue";
 
 import {fb} from '../firebase';
 
@@ -99,7 +100,14 @@ const routes = [
    
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Login.vue")
-    }
+    },
+    {
+      path: "/Payment",
+      name: "Payment",
+     
+      component: () =>
+        import(/* webpackChunkName: "about" */ "../views/Payment.vue")
+      }
 ];
 
 const router = new VueRouter({
