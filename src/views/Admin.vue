@@ -49,25 +49,14 @@
                             <span>Menu</span>
                         </li>
 
-                        <li>
-                            <router-link to="/admin/overview">
-                                <i class="fa fa-chart-line"></i>
-                               <span>Overview</span>
-                            </router-link>
-                        </li>
+                    
                         <li>
                             <router-link to="/admin/Products">
                                 <i class="fab fa-amazon"></i>
                                 <span>Products</span>
                             </router-link>
                         </li>
-                        <li>
-                            <router-link to="/admin/orders">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span>Orders</span>
-                            </router-link>
-                        </li>
-
+                   
                         <li>
                             <router-link to="/admin/profile">
                                 <i class="fa fa-user"></i>

@@ -1,6 +1,6 @@
 <template>
 
-  <div style="background: radial-gradient( #e5e5f2, #F0F2F0,#b2b2d8); "  >
+  <div id="bgmain"  >
     <Navbar>
      
    </Navbar>
@@ -8,9 +8,7 @@
    
  
  
-  <div class="home container" style="margin-top:15px;margin-bottom:20px;outline: 2px solid white; 
-    font-family:Comic Sans MS, cursive, sans-serif; 
-   background: radial-gradient( #e5e5f2, #F0F2F0,#8287F5);">
+  <div class="home container" id="conIn" >
      
    <div style="text-align:center; ">
 
@@ -68,21 +66,16 @@
   
           
 
-                 
-            
-
-
 <!-- The App Section -->
-<div class="container" style="margin-top:50px;outline: 1px solid 	#000080; background-image: linear-gradient(-225deg, #7FB3D5 0%, #FFE6FA 100%);
-">
+<div class="container" id="cont1" >
   <div class="row">
     <div class="column-66"  style="margin-top:90px;">
       <h1 class="xlarge-font"><b>NEW ARRIVALS  </b></h1>
       <h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
-      <p style="padding-left:20px;text-align: justify;"><span style="font-size:30px; ">Fall styles from </span>the size-inclusive brand are here.See what's new at BUTTON now,buy  clothes in kid's,Men's and Women's fashion-forward decor to top-selling, award-winning brands like ARMANI, FENDI,BURBERRY,LOUIS VUITTON and more.</p>
+      <p style="padding-left:20px;text-align: justify;  font-family:Lucida Sans;font-size:18px;"><span style="font-size:30px; ">Fall styles from </span>the size-inclusive brand are here.See what's new at BUTTON now,buy  clothes in kid's,Men's and Women's fashion-forward decor to top-selling, award-winning brands like ARMANI, FENDI,BURBERRY,LOUIS VUITTON and more.</p>
    <div style="margin-top:30px">
     
-      <a href="product" style="background-color:red; color: white;" class="button  " >SHOP NOW</a>
+      <a href="product" style="background-color:#4B0082; color: white;" class="button  " >SHOP NOW</a>
      </div>
     </div>
     <div class="column-33">
@@ -92,7 +85,7 @@
 </div>
 
 <!-- Clarity Section -->
-<div class="container" style="margin-top:10px;outline: 1px solid 	#800080; background-image: linear-gradient(225deg, #BB8FCE 0%, white 100%);">
+<div class="container" id="cont2" >
   <div class="row">
     <div class="column-33">
       <img  width="335" height="471"  src="../assets/l2.jpg" />
@@ -101,10 +94,10 @@
       <h1  style="font-size:55px"><b>LEARN MORE ABOUT US</b></h1>
       
       <h1 class="large-font" style="color:red;"><b>BUTTON, WHO?</b></h1>
-      <p><span style="font-size:24px">Button is an online </span>   fast fashion retailer.we design, produce,and sell our products globally and exclusively on BUTTON.COM</p>
+      <p style=" font-family:Lucida Sans;font-size:18px;"><span style="font-size:24px">Button is an online </span>   fast fashion retailer.we design, produce,and sell our products globally and exclusively on BUTTON.COM</p>
         <div style="margin-top:30px">
         
-          <a href="About" style="background-color:red; color: white;" class="button  " >Read More</a>
+          <a href="About" style="background-color:#C71585; color: white;" class="button  " >Read More</a>
     </div>
     </div>
   </div>
@@ -231,6 +224,7 @@ font-weight: bold;
   background-color: #4CAF50;
   border-radius: 4px;
   text-align: center;
+
 }
 
 img {
@@ -240,15 +234,48 @@ img {
 }
 
 
+#conIn
+{
+ margin-top:15px;
+ margin-bottom:20px;
+ outline: 2px solid white; 
+font-family:Comic Sans MS, cursive, sans-serif; 
 
-@media screen and (max-width: 1000px) {
-  .column-66,
-  .column-33 {
-    width: 100%;
-    text-align: center;
-  }
-  img {
-    margin: auto;
-  }
+
+    font-family: sans-serif;
+  
+
+   background: radial-gradient( #e5e5f2, #F0F2F0,#b2b2d8); 
+ 
+
 }
+
+#bgmain
+{
+   background: url(../assets/bg2.jpg) no-repeat;
+    background-size:cover;
+    background-position:center; 
+}
+#cont1
+{
+   background: url(../assets/conta22.jpg) no-repeat;
+    background-size:cover;
+    background-position:bottom; 
+    margin-top:50px;
+    outline: 1px solid 	#000080;
+    
+}
+
+#cont2
+{
+   background: url(../assets/conta1.jpg) no-repeat;
+    background-size:cover;
+    background-position:center; 
+  
+   
+
+    margin-top:10px;
+    outline: 1px solid 	#800080;
+}
+
 </style>

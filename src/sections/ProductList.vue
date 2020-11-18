@@ -84,7 +84,9 @@ data(){
 
 
 
-background: radial-gradient( #b2b2d8, #F0F2F0,#b2b2d8); 
+  background: url(../assets/cont.jpg) no-repeat;
+    background-size:cover;
+    background-position: center; 
 
        color: black;
     }

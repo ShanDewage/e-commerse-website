@@ -3,14 +3,15 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Admin from "../views/Admin.vue";
 import contact from "../views/contact.vue";
-import Overview from "../views/Overview.vue";
+
 import Products from "../views/Products.vue";
 import product from "../views/product.vue";
 import Profile from "../views/Profile.vue";
-import Orders from "../views/Orders.vue";
+
 import Login from "../views/Login.vue";
 import Myaccount from "../views/Myaccount.vue";
 import Payment from "../views/Payment.vue";
+
 
 import {fb} from '../firebase';
 
@@ -36,7 +37,7 @@ const routes = [
   name: "product",
  
   component: () =>
-    import(/* webpackChunkName: "about" */ "../views/product.vue")
+    import( "../views/product.vue")
   },
   {
     path: "/myaccount",
@@ -58,11 +59,7 @@ const routes = [
     meta:{requiresAuth:true},
     component: Admin,
     children:[
-    {
-      path: "Overview",
-      name: "Overview",
-      component: Overview
-    },
+   
 
     {
       path: "Products",
@@ -74,15 +71,8 @@ const routes = [
       name: "profile",
       component: Profile
     },
-    {
-      path: "orders",
-      name: "orders",
-      component: Orders
-    },
+  
     
-    
-   
-
   ]
   },
 
@@ -91,7 +81,7 @@ const routes = [
     name: "contact",
    
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/contact.vue")
+      import( "../views/contact.vue")
     },
     
   {
@@ -99,15 +89,16 @@ const routes = [
     name: "Login",
    
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Login.vue")
+      import("../views/Login.vue")
     },
     {
       path: "/Payment",
       name: "Payment",
      
       component: () =>
-        import(/* webpackChunkName: "about" */ "../views/Payment.vue")
-      }
+        import( "../views/Payment.vue")
+      },
+   
 ];
 
 const router = new VueRouter({
