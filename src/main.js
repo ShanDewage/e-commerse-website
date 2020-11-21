@@ -37,6 +37,9 @@ Vue.use(VueAnime)
 import Vue2Filters from 'vue2-filters'
 Vue.use(Vue2Filters)
 
+import SequentialEntrance from 'vue-sequential-entrance'
+import 'vue-sequential-entrance/vue-sequential-entrance.css'
+Vue.use(SequentialEntrance);
 
 
 Vue.use(VueFirestore)

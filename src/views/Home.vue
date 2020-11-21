@@ -4,7 +4,10 @@
     <Navbar>
      
    </Navbar>
-
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
    
  
  
@@ -104,25 +107,40 @@
 </div>
 
 <!-- The App Section -->
-<div class="container" style="margin-top:10px;outline: 1px solid 		#E04B00;  background-image: linear-gradient(180deg, #F1948A 0%, #ECE2DF 100%);">
+<div class="container" id="cont3">
   <div class="row">
-    <div class="column-66"  style="margin-top:50px;">
-      <h1 class="xlarge-font"><b>The App</b></h1>
-      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why buy it?</b></h1>
-      <p><span style="font-size:36px">Take photos like a pro.</span> You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <div style="margin-top:30px">
-         
-    <a href="contact" style="background-color:slateblue; color: white;" class="button  " >Contact Us</a>
-    </div>
-    </div>
-    <div class="column-33">
-       
-         <img  width="335" height="471"  src="../assets/l3.jpg" />
-    </div>
+
+     <div>
+  <sequential-entrance fromTop  autoplay="true" delay="3000"   autoplay-timeout="3000"  >
+  
+           <div id="imgbot" class="ml-1"  >
+                <img alt="slide" src="../assets/clothes/d4.jpg" width="300"  />
+            </div>
+             <div  id="imgbot" class="ml-4" >
+               <img alt="slide" src="../assets/clothes/f4.jpg" width="300"  />
+            </div>
+             <div  id="imgbot" class="ml-4"  >
+                 <img alt="slide" src="../assets/clothes/b4.jpg" width="300px" height="10px"  />
+            </div>
+              <div  id="imgbot" class="ml-1 mt-4"  >
+                 <img alt="slide" src="../assets/clothes/a3.jpg" width="300"  />
+            </div>
+              <div  id="imgbot" class="ml-4 mt-4"  >
+                 <img alt="slide" src="../assets/clothes/h4.jpg" width="300"  />
+            </div>
+              <div  id="imgbot" class="ml-4 mt-4"  >
+                 <img alt="slide" src="../assets/clothes/j4.jpg" width="300"  />
+            </div>
+
+
+  </sequential-entrance>
+
+   </div>
+  
   </div>
 </div>
 
-   
+  
      
 
     
@@ -166,6 +184,17 @@ body {
 
 }
 
+#cont3
+{
+   margin-top:10px;
+   outline: 1px solid 		#E04B00;
+  background: url(../assets/sl2.jpg) no-repeat;
+    background-size:cover;
+    background-position:center; 
+  
+   
+}
+
 .container {
   padding: 64px;
 }
@@ -179,6 +208,14 @@ body {
     display: inline-block;
   margin-left: 0;
   margin-right: 0;
+ 
+}
+
+#imgbot {
+    display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  outline: 5px solid rgb(255, 255, 255);
 }
 
 .column-66 {
