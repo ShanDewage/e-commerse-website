@@ -112,7 +112,7 @@ export default {
       logout(){
           fb.auth().signOut()
           .then(() => {
-              this.$router.replace('/home');
+              this.$router.replace('/AdminLogin');
           })
           .catch((err) =>{
               console.log(err);

@@ -74,10 +74,11 @@
 #bgm
 {
       
-  background: url(../assets/bg7.jpg) no-repeat;
+  background: url(../assets/bg9.jpg) no-repeat;
     background-size:cover;
-    background-position: bottom; 
+    background-position: top; 
       font-family: 'Lucida Sans';
+
   
 }
 </style>

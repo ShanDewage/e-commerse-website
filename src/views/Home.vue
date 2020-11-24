@@ -4,10 +4,7 @@
     <Navbar>
      
    </Navbar>
- <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+
    
  
  
@@ -186,8 +183,8 @@ body {
 
 #cont3
 {
-   margin-top:10px;
-   outline: 1px solid 		#E04B00;
+   margin-top:15px;
+   outline: 4px solid 		#E04B00;
   background: url(../assets/sl2.jpg) no-repeat;
     background-size:cover;
     background-position:center; 
@@ -197,6 +194,7 @@ body {
 
 .container {
   padding: 64px;
+  
 }
 
 .row:after {
@@ -275,23 +273,29 @@ img {
 {
  margin-top:15px;
  margin-bottom:20px;
- outline: 2px solid white; 
+
 font-family:Comic Sans MS, cursive, sans-serif; 
 
 
     font-family: sans-serif;
   
+    background: url(../assets/bg10.jpg) no-repeat;
+    background-size:cover;
+    background-position:center; 
 
-   background: radial-gradient( #e5e5f2, #F0F2F0,#b2b2d8); 
+  outline: 2px solid 	#000;
+   
  
 
 }
 
 #bgmain
 {
-   background: url(../assets/bg2.jpg) no-repeat;
+
+    background: url(../assets/bg9.jpg) no-repeat;
     background-size:cover;
     background-position:center; 
+  
 }
 #cont1
 {
@@ -299,7 +303,7 @@ font-family:Comic Sans MS, cursive, sans-serif;
     background-size:cover;
     background-position:bottom; 
     margin-top:50px;
-    outline: 1px solid 	#000080;
+    outline: 4px solid 	#000080;
     
 }
 
@@ -311,8 +315,8 @@ font-family:Comic Sans MS, cursive, sans-serif;
   
    
 
-    margin-top:10px;
-    outline: 1px solid 	#800080;
+    margin-top:15px;
+    outline: 4px solid 	#800080;
 }
 
 </style>

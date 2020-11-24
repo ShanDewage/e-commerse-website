@@ -139,9 +139,9 @@ background: linear-gradient(to left, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Fi
 #bgm
 {
       
-  background: url(../assets/bg6.jpg) no-repeat;
+  background: url(../assets/cont.jpg) no-repeat;
     background-size:cover;
-    background-position: left; 
+    background-position: bottom; 
       font-family: 'Lucida Sans';
   
 }
