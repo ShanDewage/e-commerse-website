@@ -124,7 +124,11 @@ import {fb,db} from '../firebase';
                             var errorCode = error.code;
                             var errorMessage = error.message;
                             if (errorCode === 'auth/wrong-password') {
-                                alert('Wrong password.');
+                                  Swal.fire(
+                                    'Incorrect Username or Password',
+                                    'Oops!  We did not find your log in details. Make sure you enter correct details.Try again or if you do not have an account yet, sign up for a new account.',                          
+                                    'error'
+                                    );
                             } else {
                                 alert(errorMessage);
                             }

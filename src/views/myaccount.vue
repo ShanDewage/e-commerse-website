@@ -161,7 +161,7 @@ import { VueEditor } from "vue2-editor";
 import { fb, db} from '../firebase';
 
 export default {
-  name: "Myaccount",
+  name: "myaccount",
   components: {
     VueEditor
   },

@@ -15,7 +15,7 @@
                 
                         <div class="card-body" id="bgname">
                           <div class="d-flex justify-content-between  ">
-                            <h6 class="card-title text-md-left col-50 text-truncate">{{ product.name }}</h6>
+                            <h6 class="card-title text-md-left col-100 text-truncate">{{ product.name }}</h6>
                             
                         </div>
                         <div  >

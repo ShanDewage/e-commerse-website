@@ -5,12 +5,17 @@ import Admin from "../views/Admin.vue";
 import contact from "../views/contact.vue";
 
 import Products from "../views/Products.vue";
-import product from "../views/product.vue";
+//import product from "../views/product.vue";
 import Profile from "../views/Profile.vue";
 
 import Login from "../views/Login.vue";
+<<<<<<< HEAD
 import myaccount from "../views/myaccount.vue";//methanai 
+=======
+import myaccount from "../views/myaccount.vue";
+>>>>>>> da3ce47270e417b0893ec02541df50fd8c747413
 import Payment from "../views/Payment.vue";
+import AdminLogin from "../views/AdminLogin.vue";
 
 
 import {fb} from '../firebase';
@@ -40,11 +45,23 @@ const routes = [
     import( "../views/product.vue")
   },
   {
+    path: "/AdminLogin",
+    name: "AdminLogin",
+   
+    component: () =>
+      import( "../views/AdminLogin.vue")
+    },
+      
+  {
     path: "/myaccount",
     name: "myaccount",
     meta:{requiresAuth:true},
     component: () =>
+<<<<<<< HEAD
       import("../views/myaccount.vue")//menna mekei
+=======
+      import("../views/myaccount.vue")
+>>>>>>> da3ce47270e417b0893ec02541df50fd8c747413
     },
   {
     path: "/checkout",
@@ -56,7 +73,7 @@ const routes = [
   {
     path: "/admin",
     name: "admin",
-    meta:{requiresAuth:true},
+    meta:{reqAuth:true},
     component: Admin,
     children:[
    
@@ -116,6 +133,20 @@ router.beforeEach((to,from,next)=>{
   if(requiresAuth && !currentUser){
     next('/Login')
   }else if (requiresAuth && currentUser){
+    next()
+  }else {
+    next()
+  }
+})
+
+
+router.beforeEach((to,from,next)=>{
+  const reqAuth =to.matched.some(x => x.meta.reqAuth)
+  const currentUser =fb.auth().currentUser
+
+  if(reqAuth && !currentUser){
+    next('/AdminLogin')
+  }else if (reqAuth && currentUser){
     next()
   }else {
     next()
