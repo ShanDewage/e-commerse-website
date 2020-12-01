@@ -91,7 +91,7 @@ import {fb,db} from '../firebase';
                             if (errorCode === 'auth/wrong-password') {
                                     Swal.fire(
                                     'Incorrect Admin or Password',
-                                    'Oops!  Your Admin Details is incorrect. Make sure you enter correct details.',                          
+                                    'Oops!  Your Admin Details are incorrect. Make sure you enter correct details.',                          
                                     'error'
                                     )
                             } else {
