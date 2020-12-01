@@ -9,7 +9,7 @@ import product from "../views/product.vue";
 import Profile from "../views/Profile.vue";
 
 import Login from "../views/Login.vue";
-import Myaccount from "../views/Myaccount.vue";
+import myaccount from "../views/myaccount.vue";//methanai 
 import Payment from "../views/Payment.vue";
 
 
@@ -44,7 +44,7 @@ const routes = [
     name: "myaccount",
     meta:{requiresAuth:true},
     component: () =>
-      import("../views/Myaccount.vue")
+      import("../views/myaccount.vue")//menna mekei
     },
   {
     path: "/checkout",
