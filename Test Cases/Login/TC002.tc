@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify whether click on the login button then display the login form</description>
+   <name>TC002</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2dfe266c-397e-4109-88b2-dd2e0cbdf72d</testCaseGuid>
+</TestCaseEntity>

@@ -1,23 +1,21 @@
-.DS_Store
-node_modules
-/dist
+.gradle
 
+bin
 
-# local env files
-.env.local
-.env.*.local
+Reports
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+Libs
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+output
+
+!output/.gitkeep
+build
+
+.classpath
+
+.project
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
