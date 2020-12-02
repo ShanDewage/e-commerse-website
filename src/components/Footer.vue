@@ -49,13 +49,13 @@
 
         <ul class="list-group text-muted col-md-6 mx-auto"  >
           <li class="row">
-            <h6 >NO.07,</h6>
+            <h6 >NO.36,</h6>
           </li>
           <li  class="row">
-            <h6 >PITIPANA,</h6>
+            <h6 >PAMUNUWA ROAD,</h6>
           </li>
           <li  class="row">
-             <h6 >HOMAGAMA.</h6>
+             <h6 >MAHARAGAMA.</h6>
           </li>
          
         </ul>
