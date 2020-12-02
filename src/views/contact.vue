@@ -52,7 +52,7 @@
                                 </div>
                                 <div  class="contact-form-right ml-3">
                                   <p  style="  text-align: justify;font-size:15px;font-weight:bold;"> 
-                                      Customer Services,  No.07, Pitipana, Homagama (please be aware, this is not a returns address).
+                                      Customer Services,  No.36, Pamunuwa, Maharagama (please be aware, this is not a returns address).
                                   </p>
                                 
                                 </div>
