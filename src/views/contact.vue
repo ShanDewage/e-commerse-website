@@ -13,7 +13,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
                       
                         
-  <p><i class="fas fa-map-marker-alt"></i> <label style=" word-spacing: 24px;"> Address :</label> No.07, <br><label style="padding-left:110px;">  Pitipana,<br> Homagama.</label></p>
+  <p><i class="fas fa-map-marker-alt"></i> <label style=" word-spacing: 24px;"> Address :</label> No.36, <br><label style="padding-left:110px;">  Pamunuwa Road,<br> Maharagama.</label></p>
                        
                               
                           

@@ -5,15 +5,15 @@ import Admin from "../views/Admin.vue";
 import contact from "../views/contact.vue";
 
 import Products from "../views/Products.vue";
-//import product from "../views/product.vue";
+import product from "../views/product.vue";
 import Profile from "../views/Profile.vue";
 
 import Login from "../views/Login.vue";
-<<<<<<< HEAD
-import myaccount from "../views/myaccount.vue";//methanai 
-=======
+
+
+
 import myaccount from "../views/myaccount.vue";
->>>>>>> da3ce47270e417b0893ec02541df50fd8c747413
+
 import Payment from "../views/Payment.vue";
 import AdminLogin from "../views/AdminLogin.vue";
 
@@ -57,11 +57,11 @@ const routes = [
     name: "myaccount",
     meta:{requiresAuth:true},
     component: () =>
-<<<<<<< HEAD
-      import("../views/myaccount.vue")//menna mekei
-=======
+
       import("../views/myaccount.vue")
->>>>>>> da3ce47270e417b0893ec02541df50fd8c747413
+
+     
+
     },
   {
     path: "/checkout",
